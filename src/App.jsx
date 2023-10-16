@@ -2,11 +2,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <>I am here with new settings</>;
+  return (
+    <div className="App">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
