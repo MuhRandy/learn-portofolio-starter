@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="n-wrapper">
       <div className="n-left">
-        <div className="n-name">Muhammad Randy</div>
+        <div className="n-name">Randy</div>
         <span>toggle</span>
       </div>
       <div className="n-right">
