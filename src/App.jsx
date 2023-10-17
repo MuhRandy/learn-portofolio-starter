@@ -5,6 +5,7 @@ import Intro from "./components/Intro/Intro";
 import Services from "./components/Services/Services";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
+import Portofolio from "./components/Portofolio/Portofolio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Experience />
       <Works />
+      <Portofolio />
     </div>
   );
 }
