@@ -8,6 +8,7 @@ import Works from "./components/Works/Works";
 import Portofolio from "./components/Portofolio/Portofolio";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
       <Portofolio />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }
