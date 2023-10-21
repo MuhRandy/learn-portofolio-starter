@@ -4,12 +4,16 @@ import Fiverr from '../../assets/img/Fiverr.png'
 import Amazon from '../../assets/img/Amazon.png'
 import Shopify from '../../assets/img/Shopify.png'
 import Facebook from '../../assets/img/Facebook.png'
+import { useContext } from 'react'
+import { themeContext } from '../../Context'
 
 const Works = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
     return ( 
     <div className="works">
         <div className="awesome">
-            <span>Works for All these</span>
+            <span style={{color: darkMode? 'white': ''}}>Works for All these</span>
             <span>Brands & Clients</span>
             <span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

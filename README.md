@@ -9,3 +9,4 @@
 - [Swiper](https://swiperjs.com/)
 - [EmailJs](https://www.emailjs.com/)
 - [Iconscout](https://iconscout.com/unicons)
+- [Framer Motion](https://www.framer.com/motion/)
