@@ -6,7 +6,9 @@
 - most image get from [Rawpixel](https://rawpixel.com)
 
 ## This web using
+
 - [Swiper](https://swiperjs.com/)
 - [EmailJs](https://www.emailjs.com/)
 - [Iconscout](https://iconscout.com/unicons)
 - [Framer Motion](https://www.framer.com/motion/)
+- [React Scroll](https://github.com/fisshy/react-scroll)

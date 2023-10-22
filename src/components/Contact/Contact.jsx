@@ -1,33 +1,42 @@
 import "./Contact.css";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useContext } from "react";
 import { useRef, useState } from "react";
 import { themeContext } from "../../Context";
 
 const Contact = () => {
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_52hecqs', 'template_a1z0g7w', form.current, '9vsJNQcQFVPR8ml1S')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_52hecqs",
+        "template_a1z0g7w",
+        form.current,
+        "9vsJNQcQFVPR8ml1S"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          setDone(true)
-      }, (error) => {
+          setDone(true);
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="Contact">
       <div className="w-left">
         <div className="awesome">
-          <span style={{color: darkMode? 'white': ''}}>Get in touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in touch</span>
           <span>Contact me</span>
           <div
             className="blur s-blur1"
